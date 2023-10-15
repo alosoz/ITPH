@@ -88,6 +88,7 @@
 # print(reversed_list)
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
+
 # # Question_7 :Write a program to create a new list from an existing list using list slicing.
 
 # # Create a list named my_list with items 'p','y','t','h','o','n'.
@@ -98,6 +99,7 @@
 # new_list = my_list[1:-1]
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
+
 # # Question_8 : Given a list of numbers, find the sums of even numbers and odd numbers.
 
 # # Print both sums in a tuple as (odd_sum, even_sum).
@@ -125,34 +127,39 @@
 # # Assumption: The input numbers are always in ascending order.
 # # Example Test Input -7 -2 0 4 5, 7Expected Output [0, 4, 16, 25, 49]
 
-num_list = [-7, -2, 0, 4, 5]
-num_list.sort()
-result_list = []
-for i in num_list:
-    i *= i
-    result_list.append(i)
-result_list.sort()
-print(result_list)
-
-
-
-
-
-
+# num_list = [-7, -2, 0, 4, 5]
+# num_list.sort()
+# result_list = []
+# for i in num_list:
+#     i *= i
+#     result_list.append(i)
+# result_list.sort()
+# print(result_list)
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
-# # Question_10 : Given a list of numbers, find if the list elements are in ascending sequence or not a sequence at all. Write a
 
-# # Python program that prints,
+# # Question_10 : Given a list of numbers, find if the list elements are in ascending sequence or not a sequence at all. 
+
+# # Write a Python program that prints,
 # # True - if the list elements are a perfect sequence
 # # False - if the list elements are not a sequence
 # # Example Test Input 1 2 3 4 5 Expected Output True
 
+# list1 = [1,2,3,4,5]
+# for i,j in (list1, list1[1:]):
+#     if i < list1:
+#         print(True)
+#     else:
+#         print(False)
+
+# #yapamadim tekrar bak
 
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
 
+
 # # Advanced
+
 
 # # Question_11 : Create a program to print the occurrence of a character in the string.
 
@@ -163,9 +170,16 @@ print(result_list)
 # # Inside the loop, check the occurrence of the character in the string. If it's True, increment count by 1.
 # # Print the count variable
 
-
+# str1 = input("enter a string")
+# character1 = input("enter a character")
+# count = 0
+# for i in str1:
+#     if i == character1:
+#         count += 1
+# print(count)
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
+
 # # Question_12 : Write a program to replace 'yt' in 'Python' with the string entered by the user.
 
 # # Create a string named language with the value "Python".
@@ -173,21 +187,26 @@ print(result_list)
 # # Use the replace() method to replace "yt" with user-entered string stored in ch.
 # # Print the new string.
 # # Hint: Use the string replace() method. This method takes two arguments.
-
 # # oldValue - a substring we want to replace
 # # newValue - a substring that replaces the oldValue
 # # Example Test Input ab Expected Output Pabhon
 
-
+# language = "Python"
+# ch = input("enter a string: ")
+# new_str = language.replace("yt", ch)
+# print(new_str)
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
+
 # # Question_13 : Write a program to concatenate two strings.
 
 # # Get two string inputs for variables string1 and string2.
 # # Concatenate these strings and store them in the result variable.
 # # Print the value of result.
 
-
-
+str1 = input("enter first string: ")
+str2 = input("enter second string: ")
+result = str1 + str2
+print(result)
 
 # # ------------------------------------------------------------------------------------------------------------------------------------
