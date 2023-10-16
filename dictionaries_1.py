@@ -1,3 +1,7 @@
+# Python dictionaries questions 
+
+# Here are some questions/puzzles about Python dictionaries. Take some time to try out the code and get to an answer. 
+
 # Question_1 : What are correct ways to get the value of marks key?
 
 student = {
@@ -11,6 +15,9 @@ m = student.get('marks')
 m = student[2])
 m = student['marks'])
 
+# answer:
+m = student.get("marks")
+
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -19,6 +26,8 @@ m = student['marks'])
 True  
 False
 
+# answer:
+True
 
 
 
@@ -32,6 +41,10 @@ print(temp)
 KeyError: ‘age’
 None
 
+# answer:
+None
+
+
 
 
 
@@ -41,7 +54,8 @@ None
 True
 False
 
-
+#answer:
+False
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -51,7 +65,9 @@ dict2 = dict1.copy()
 dict2 = dict(dict1)
 dict2 = dict1
 
-
+#answer:
+dict2 = dict1.copy()
+dict2 = dict(dict1)
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -62,8 +78,12 @@ student = {
   "class": 9, 
   "marks": 75 
 }
+
 del student
 del student[0:2]
+student.clear()
+
+#answer:
 student.clear()
 
 
@@ -81,6 +101,9 @@ print(sampleDict)
 
 [ (‘first’, 100), (‘second’, 200), (‘third’, 300) ]
 Options: SyntaxError: invalid syntax
+{‘first’: 1, ‘second’: 2, ‘third’: 3}
+
+#answer:
 {‘first’: 1, ‘second’: 2, ‘third’: 3}
 
 
@@ -106,6 +129,8 @@ sampleDict['class']['student']['marks'][1]
 sampleDict['class'][0]['marks']['history']
 
 
+#answer:
+sampleDict['class']['student']['marks']['history']
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -119,7 +144,8 @@ student[1]["age"]
 student[0]["age"]
 
 
-
+#answer:
+student[1]["age"]
 
 # ------------------------------------------------------------------------------------------------------------------------------------
 # Question_10 : What is the output of the following dictionary operation
@@ -129,9 +155,10 @@ temp = dict1.pop("age")
 print(temp)
 
 KeyError: ‘age’
-None
+# None
 
-
+#answer:
+KeyError: ‘age’
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
@@ -145,20 +172,30 @@ True
 False
 
 
-
-
-# ------------------------------------------------------------------------------------------------------------------------------------
-# Question_12 : What is the output of the following code
-
-dict1 = {"key1":1, "key2":2}
-dict2 = {"key2":2, "key1":1}
-print(dict1 == dict2)
-
+#answer:
 True
-False
-
-
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------
-# Question_2 :
+# Question_12 : Select all correct ways to create an empty dictionary 
+
+sampleDict = {} 
+
+sampleDict = dict() 
+
+sampleDict = dict{} 
+
+sample.cleat 
+
+Other: 
+
+
+#answer:
+sampleDict = {} 
+
+sampleDict = dict() 
+
+Other: empty_dict = {key: value for key, value in []}
+
+
+# ------------------------------------------------------------------------------------------------------------------------------------

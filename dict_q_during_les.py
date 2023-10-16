@@ -23,10 +23,12 @@ def add():
     save_data()
 
 def show():
-    name = input("Enter employee name")
-    if name in employee_data:
-        info = employee_data[name]
-        print("Name: {}, Age: {}, Starting Year: {}".format(name,info["Age"],info["StartYear"]))
+    # name = input("Enter employee name")
+    # if name in employee_data:
+    #     info = employee_data[name]
+    #     print("Name: {}, Age: {}, Starting Year: {}".format(name,info["Age"],info["StartYear"]))
+    
+    print(employee_data )
 
 def change():
     name = input("Enter employee name")
@@ -64,15 +66,15 @@ while True:
 5. Exit                   
 
 """)
-    if choise == 1:
+    if choise == '1':
         add()
-    elif choise == 2:
+    elif choise == '2':
         show()
-    elif choise == 2:
+    elif choise == '3':
         change()
-    elif choise == 2:
+    elif choise == '4':
         delete()
-    elif choise == 2:
+    elif choise == '5':
         break
     else:
         print("Invalid choice. Please enter a valid option from menu")
